@@ -1,6 +1,10 @@
+<?php 
+ include ('config.php')
+?>
+
 <?php  
 if (isset($_POST['btn'])){
-	
+ echo "Dear,".$_POST['username']."Your Details are".'<br>';
 
 echo $_POST['id'];
 echo $_POST['username'];
@@ -8,6 +12,10 @@ echo $_POST['age'];
 echo $_POST['Contact'];
 echo $_POST['emailid'];
 }
+else{
+	echo "Welcome Guest";
+}
+
 ?>
 <html>
 <head>
